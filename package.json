@@ -1,0 +1,35 @@
+{
+  "name": "ts-generic-property",
+  "version": "0.0.0",
+  "description": "Creates object with generic property",
+  "main": "dist/umd/index.js",
+  "module": "dist/index.js",
+  "browser": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "preversion": "npm run build",
+    "postversion": "git add . && git commit -am lint || : && git push && git push --tags",
+    "build:dts": "tsc -p . -d true --emitDeclarationOnly true --removeComments false",
+    "build:umd": "tsc -p . -m umd -t es5 --lib es2015 --outDir ./dist/umd",
+    "build:es6": "tsc -p .",
+    "build": "rm -rf dist && mkdir dist && npm run build:dts && npm run build:umd && npm run build:es6"
+  },
+  "keywords": [],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "author": "iyegoroff <iegoroff@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iyegoroff/ts-generic-property/issues"
+  },
+  "homepage": "https://github.com/iyegoroff/ts-generic-property#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyegoroff/ts-generic-property.git"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}
