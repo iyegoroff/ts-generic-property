@@ -1,6 +1,6 @@
 {
   "name": "ts-generic-property",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Creates object with generic property",
   "main": "dist/umd/index.js",
   "module": "dist/index.js",
