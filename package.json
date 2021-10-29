@@ -1,6 +1,6 @@
 {
   "name": "ts-generic-property",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Creates object with generic property",
   "sideEffects": false,
   "main": "./dist/cjs/index.js",
