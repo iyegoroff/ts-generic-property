@@ -1,6 +1,6 @@
 {
   "name": "ts-generic-property",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Creates object with generic property",
   "sideEffects": false,
   "types": "./dist/dts/index.d.ts",
